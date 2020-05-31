@@ -1,0 +1,7 @@
+appline\Init.class
+appline\pages\MainPage.class
+appline\pages\ResultPage.class
+appline\pages\SearchBar.class
+appline\pages\BasePage.class
+appline\VirtualCart.class
+appline\pages\ProductPage.class
