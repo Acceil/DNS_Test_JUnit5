@@ -11,7 +11,7 @@ public class ProductPage extends BasePage {
     @FindBy(xpath = "//h1[@data-product-param='name']")
     WebElement productName;
 
-    @FindBy(xpath = "//div[@class='price-buttons-item with-cart-btn']//button[@class='buy-btn btn btn-cart btn-lg']")
+    @FindBy(xpath = "//div[@class='price-buttons-item with-cart-btn']//button[./label[text()='Купить']]")
     WebElement buyButton;
 
     public void addToCart() {
