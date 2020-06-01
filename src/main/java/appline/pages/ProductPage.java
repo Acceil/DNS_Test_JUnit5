@@ -5,13 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class ProductPage extends BasePage {
-    @FindBy(xpath = "//div[@class='hidden-xs hidden-sm price-block-wrap price-block-wrap_view_desktop']//span[@class='current-price-value']")
+    @FindBy(xpath = "//div[@class='clearfix']//span[@class='current-price-value']")
     WebElement productPrice;
 
     @FindBy(xpath = "//h1[@data-product-param='name']")
     WebElement productName;
 
-    @FindBy(xpath = "(//button[@class='buy-btn btn btn-cart btn-lg'])[1]")
+    @FindBy(xpath = "//div[@class='price-buttons-item with-cart-btn']//button[@class='buy-btn btn btn-cart btn-lg']")
     WebElement buyButton;
 
     public void addToCart() {
